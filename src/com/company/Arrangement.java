@@ -1,40 +1,64 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Arrangement {
 
-        private String kunstner;
+        private String arrangementName;
+        private Bands[] performingBands;
         private String placering;
         private String dato;
         private String tidspunkt;
-        private Billet[] tickets;
+        private Billet[] billetter;
         private String performingBandPrice;
+        private String billetName;
 
-    public Arrangement(String kunstner, String placering, String dato, String tidspunkt, Billet[] tickets) {
-        this.kunstner = kunstner;
+    public Arrangement(String arrangementName,Bands[] performingBands, String placering, String dato, String tidspunkt) {
+        this.arrangementName = arrangementName;
+        this.performingBands = performingBands;
         this.placering = placering;
         this.dato = dato;
         this.tidspunkt = tidspunkt;
-        this.tickets = tickets;
     }
-
-    public Billet[] getTickets(){
-        return this.tickets;
-    }
-
 
     @Override
     public String toString() {
-        return "Arrangement{" +
-                "kunstner='" + kunstner + '\'' +
-                ", placering='" + placering + '\'' +
-                ", dato='" + dato + '\'' +
-                ", tidspunkt='" + tidspunkt + '\'' +
+        return arrangementName.toUpperCase() +
+                "\n" + "\"\"\"\"\"\"\"\"\"\" \narrangementName= " + arrangementName + ",\n" +
+                "PerformingBands= " + Arrays.toString(performingBands) +
+                "\n placering= \'" + placering + "\'" +
+                ",  dato= '" + dato + '\'' +
+                ",  tidspunkt= '" + tidspunkt + '\'' +
                 '}';
     }
 
+    public Billet[] getBilletter(){
+        return this.billetter;
+    }
+
+    public String getBilletName(){
+        return this.billetName;
+    }
+
+    public String getArrangementName(){
+        return this.arrangementName;
+    }
+    public String getArrangementPlacering(){
+        return this.placering;
+    }
+    public String getArrangementDato(){
+        return this.dato;
+    }
+    public String getArrangementTidspunkt(){
+        return this.tidspunkt;
+    }
+
+
     public Billet købBillet(){
-        Billet billetTilMetalica = new Billet(this.kunstner, this.placering, this.dato, this.tidspunkt, this.tickets);
-        return billetTilMetalica;
+
+        Billet billetName = new Billet(arrangementName, performingBands, placering, dato, tidspunkt);
+
+        return billetName;
     }
     public int getPerformingBandPrice(){
 
