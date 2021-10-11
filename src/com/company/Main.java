@@ -33,6 +33,19 @@ public class Main {
         for (int i = 0; i < billetterTilSmukfest.length; i++) {
             System.out.println(billetterTilSmukfest[i]);
         }
+
+        Bands Kanye = new Bands("Kanye", "Rap", 10000, "23:00");
+        Bands JustinBieber = new Bands("Justin Bieber", "Pop", 10000, "22:00");
+        Bands HannahMontana = new Bands("Hannah Montana", "Pop", 12000, "20:00");
+
+        Bands[] kunstnereTilRoskildeFestival = {Kanye, JustinBieber, HannahMontana};
+
+        roskildefestival = new Arrangement("Roskilde Festival", kunstnereTilRoskildeFestival, "Roskilde", "1-7-2021", "10:00");
+        Billet roskildeBillet1 = new Billet(roskildefestival.getArrangementName(), kunstnereTilRoskildeFestival, roskildefestival.getArrangementPlacering(), roskildefestival.getArrangementDato(), roskildefestival.getArrangementTidspunkt());
+
+        System.out.println(roskildefestival);
+        System.out.println(roskildeBillet1);
+
     }
 }
 
