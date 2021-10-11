@@ -61,12 +61,7 @@ public class Arrangement {
 
         return billetName;
     }
-    public int getPerformingBandPrice(){
 
-        int price = 5000;
-
-        return price;
-    }
    /* public String showPerformingBands(){
         for (int i = 0; i < performingBands.length; i++) {
             System.out.println(performingBands[i]);

@@ -23,6 +23,7 @@ public class Main {
         //Vi laver et public arrangement med de bands der lige er blevet lavet. Dette gør vi vha. en arraylist til performing bands
         smukfest = new Arrangement("Smukfest", performingBandsForSmukfest, "Grønscene", "7-7-2021", "19:00");
 
+
         //Vi laver nogle billetter til arrangementet hvor vi henter alle parametre fra metodekald i Arrangementclassen
         Billet smukfestBillet1 = new Billet(smukfest.getArrangementName(), performingBandsForSmukfest, smukfest.getArrangementPlacering(), smukfest.getArrangementDato(), smukfest.getArrangementTidspunkt());
         Billet smukfestBillet2 = new Billet(smukfest.getArrangementName(), performingBandsForSmukfest, smukfest.getArrangementPlacering(), smukfest.getArrangementDato(), smukfest.getArrangementTidspunkt());
