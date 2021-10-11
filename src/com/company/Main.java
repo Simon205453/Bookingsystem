@@ -10,7 +10,6 @@ public class Main {
     public static Arrangement roskildefestival;
 
 
-
     public static void main(String[] args) {
 
         //Vi registerer nogle bands, da vi ikke kan lave et arrangement uden at have bands der spiller til.
@@ -31,11 +30,11 @@ public class Main {
 
         System.out.println(smukfest);
 
-            for (int i = 0; i < billetterTilSmukfest.length; i++) {
-                System.out.println(billetterTilSmukfest[i]);
-            }
+        for (int i = 0; i < billetterTilSmukfest.length; i++) {
+            System.out.println(billetterTilSmukfest[i]);
         }
     }
+}
 
 
 
