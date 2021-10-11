@@ -11,7 +11,7 @@ public class Arrangement {
         private String tidspunkt;
         private Billet[] billetter;
         private String performingBandPrice;
-        private String billetName;
+        private int billetName;
 
     public Arrangement(String arrangementName,Bands[] performingBands, String placering, String dato, String tidspunkt) {
         this.arrangementName = arrangementName;
@@ -36,7 +36,8 @@ public class Arrangement {
         return this.billetter;
     }
 
-    public String getBilletName(){
+    public int getBilletName(){
+        billetName = Billet.billetId++;
         return this.billetName;
     }
 

@@ -2,18 +2,12 @@ package com.company;
 
 public class Billet extends Arrangement{
 
+    static int billetId;
+
     public Billet(String arrangementName, Bands[] performingBands, String placering, String dato, String tidspunkt) {
         super(arrangementName, performingBands, placering, dato, tidspunkt);
 
         }
-
-    /*         for (int i = 1; i < 100; i++){
-        if (billetId==i){
-            billetId=i++;
-        } else {
-            billetId=i;
-        }
-    }*/
 
 
     @Override
