@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Vi registerer nogle bands, da vi ikke kan lave et arrangement uden at have bands der spiller til.
+        //Vi registerer nogle bands, da vi ikke kan lave et arrangement uden at have bands der spiller til. <33
 
         //registerBand("Skillet", "Rock", 10000, "23:00");   --------- DETTE ER SGU NOK UBRUGELIGT
         Bands skillet = new Bands("Skillet", "Rock", 10000, "23:00");
