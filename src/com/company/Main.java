@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 
-    //Vi laver et public Arrangement, som kan tilgås af alle classes, men samtidigt også begrænser os til kun at have 1 arrangement af gangen.
+    //Vi laver et public Arrangement, som kan tilgås af alle classes.
     public static Arrangement smukfest;
     public static Arrangement roskildefestival;
 
